@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>小孙同学</title>
+	<title>L❤️T</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<style>
@@ -58,8 +58,8 @@
 		}
 
 		.element img {
-			width: 100px;
-			height: 100px;
+			width: 120px;
+			height: 120px;
 		}
 
 		.element .number {
@@ -179,18 +179,18 @@
 		<source src="http://www.ytmp3.cn/down/72794.mp3">
 	</audio>
 	<div id="menu">
-		<button id="table">表格</button>
-		<button id="sphere">球球</button>
-		<button id="helix">螺旋</button>
-		<button id="grid">格子</button>
+		<button id="table" style="display: none;">表格</button>
+		<button id="sphere" style="display: none;">球球</button>
+		<button id="helix" style="display: none;">螺旋</button>
+		<button id="grid" style="display: none;">格子</button>
 	</div>
 
-	<div class="show_info animated" style="display:none;">
-		<div class="info_my">
-			<img width=200px src="img/c.png" />
-		</div>
-		<div class="intro">天气好冷，我的心是冰冰的！</div>
-	</div>
+<!--	<div class="show_info animated" style="display:none;">-->
+<!--		<div class="info_my">-->
+<!--			<img width=200px src="img/c.png" />-->
+<!--		</div>-->
+<!--		<div class="intro">天气好冷，我的心是冰冰的！</div>-->
+<!--	</div>-->
 
 	<script>
 		var personArray = new Array;
@@ -212,8 +212,8 @@
 			setTimeout(function () {
 				$('.show_info').removeClass(_in[rand_in]);
 				// 更改展示的图片
-				var img = document.getElementsByClassName('element')[CurPersonNum].getElementsByTagName('img')[0];
-				img.setAttribute('src', 'img/a.png');
+				// var img = document.getElementsByClassName('element')[CurPersonNum].getElementsByTagName('img')[0];
+				// img.setAttribute('src', 'img/a.png');
 				++CurPersonNum;
 				setTimeout(function () {
 					$('.show_info').addClass(_out[rand_out]);
@@ -226,9 +226,9 @@
 		}, 4500);
 
 		// 生成虚拟数据
-		for (var i = 0; i < 199; i++) {
+		for (var i = 0; i < 99; i++) {
 			personArray.push({
-				image: "img/a.png"
+				image: `img/${i}.jpeg`
 			});
 		}
 
