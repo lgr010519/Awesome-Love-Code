@@ -97,16 +97,12 @@ function Next() {
 }
 
 function Rise() {
-    //4.爱心升高，多出的那个小方块开始掉落
-    console.log("开始升空");
     let timer2 = null,
         distance = 0;
-    /* 升高时，移动的距离*/
-    const target = 120, /* 目标距离*/
+    const target = 120,
         speed = 1;
-    /*移动速度*/
 
-    let love_top = parseFloat(window.getComputedStyle(love, null).top.slice(0, -2));  //爱心盒子距离屏幕顶部的距离
+    let love_top = parseFloat(window.getComputedStyle(love, null).top.slice(0, -2));               //爱心盒子距离屏幕顶部的距离
 
 
     timer2 = setInterval(() => {
@@ -115,7 +111,6 @@ function Rise() {
         if (distance >= target) {
             clearInterval(timer2);
 
-            console.log("升空完毕");
 
         }
 
@@ -133,5 +128,5 @@ window.onload = function () {
         }, 300);
 
 
-    }, 12000);   //gif图播放完毕所需时间为11.73s
+    }, 12000);
 };
